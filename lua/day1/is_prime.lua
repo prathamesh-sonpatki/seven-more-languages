@@ -1,7 +1,7 @@
 is_prime = function(num)
-   if num <= 0 then
+   if num <= 1 then
       return false
-   elseif num <= 2 then
+   elseif num == 2 then
       return true
    elseif num % 2 == 0 then
       return false
@@ -15,6 +15,6 @@ is_prime = function(num)
    end
 end
 
+print(is_prime(1))
 print(is_prime(91))
-
 print(is_prime(113))
